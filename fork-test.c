@@ -31,8 +31,8 @@ int main(int argc, char *argv[]) {
     printf("%d\t%s\t%d\t%d\t%4d\t%4d\t%4d\n", i, 0 == fpid ? "child" : "parent",
            global_var, local_var, getppid(), getpid(), fpid);
   }
-  printf("global variable address: (0x%x)=%d\n", &global_var, global_var);
-  printf("local variable address: (0x%x)=%d\n", &local_var, local_var);
+  printf("global variable address: (%p)=%d\n", &global_var, global_var);
+  printf("local variable address: (%p)=%d\n", &local_var, local_var);
   printf("PID %d done!\n", getpid());
   return EXIT_SUCCESS;
 }

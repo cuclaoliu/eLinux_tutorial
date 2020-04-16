@@ -5,7 +5,8 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-//编译命令：gcc call_exec.c -o call_exec -lreadline
+//安装依赖包: sudo apt install libreadline-dev
+//编译命令: gcc call_exec.c -o call_exec -lreadline
 
 int main(int argc, char *argv[]){
 	char *input;

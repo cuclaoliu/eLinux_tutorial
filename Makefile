@@ -29,6 +29,7 @@ uninstall:
 	#显示内核信息，最后5行
 	dmesg | tail -n 5
 clean distclean:
-	rm -f *.o *.mod.c .*.*.cmd *.ko Mod*.* mo*.*
+	rm -f *.o *.mod.c .*.*.cmd *.ko Mod*.* mo*.* *.mod
 	rm -rf .tmp_versions
+	rm -f drvdemo_write drvdemo_read
 endif
